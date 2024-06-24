@@ -120,6 +120,14 @@ footer p {
   overflow: auto;
 }
 
+.light-link {
+  color: #9E7FEB !important;
+}
+
+.light-link:hover {
+  color: #FFFFFF !important;
+}
+
 /* NOTE TO SELF: VERTICAL IMAGE SIZING */
 td:first-child img {
   max-height: 200px;
