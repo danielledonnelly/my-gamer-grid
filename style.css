@@ -333,7 +333,6 @@ a:hover,
   text-decoration: none !important;
 }
 
-
 .dropdown-menu {
   max-width: 55px !important;
   border: 10px #FFFFFF !important;
@@ -357,6 +356,9 @@ a:hover,
   .small-logo {
     display: block;
   }
+  td:first-child img {
+    max-height: 150px;
+  }
 }
 
 /* Mobile Styles */
@@ -366,5 +368,8 @@ a:hover,
   }
   .small-logo {
     display: block;
+}
+  td:first-child img {
+  max-height: 100px;
 }
 }
