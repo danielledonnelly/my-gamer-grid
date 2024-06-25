@@ -54,6 +54,7 @@ table {
   border-collapse: collapse;
   overflow-x: auto !important;
   padding-top: 60px;
+  margin-bottom: 0px !important;
 }
 
 .medium-button {
