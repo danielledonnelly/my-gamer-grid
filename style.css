@@ -366,5 +366,6 @@ a:hover,
   }
   .small-logo {
     display: block;
+    max-width: 250px !important;
 }
 }
