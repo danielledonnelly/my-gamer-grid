@@ -57,6 +57,11 @@ tr {
   border-bottom: 2px solid var(--border) !important; 
 }
 
+td {
+  vertical-align: middle !important; 
+  padding: 10px 20px; 
+}
+
 p {
   font-size: medium;
   color: #F465EE !important;
