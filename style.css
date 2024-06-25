@@ -6,7 +6,7 @@
 
 :root {
   color-scheme: dark;
-  --header: #000000 !important;
+  --header:  #000000 !important;
   --body: #000000 !important;
   --table: #000000 !important;
   --footer: #000000 !important;
@@ -15,8 +15,16 @@
   --hover: #2c0f76 !important;
 }
 
+.logo {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 20px; 
+  cursor: pointer; 
+}
+
 main {
-  margin-top: 40px !important;
+  margin-top: 70px;
   background-color: var(--body);
   width: 100% !important;
 }
@@ -33,7 +41,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   float: left;
-  padding-top: 60px;
+  padding-top: 60px
 } 
 
 tr:hover {
@@ -45,7 +53,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   overflow-x: auto !important;
-  padding-top: 800px !important;
+  padding-top: 60px;
 }
 
 .medium-button {
@@ -54,14 +62,11 @@ table {
 
 tr {
   border-top: 2px solid var(--border) !important; 
-  border-bottom: 2px solid var(--border) !important; 
+  border-bottom: 2px solid var(--border) !important;
+  max-height: 200px; /* Ensure table rows have a maximum height */
+  overflow: hidden; /* Hide overflow content */
 }
-
-td {
-  vertical-align: middle !important; 
-  padding: 10px 20px; 
-}
-
+    
 p {
   font-size: medium;
   color: #F465EE !important;
@@ -80,6 +85,7 @@ h3 {
 
 header {
   background-color: var(--header) !important;
+  padding: 20px 0 !important;
   justify-content: space-between !important;
   align-items: center !important;
   width: 100% !important;
@@ -88,27 +94,6 @@ header {
   top: 0;
   z-index: 999;
   border-bottom: 2px solid var(--border);
-}
-
-footer {
-  width: 100%;
-  background-color: var(--footer);
-  text-align: center;
-  box-sizing: border-box;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  border-top: 1px solid var(--border);
-  padding: 10px;
-}
-
-footer p {
-  font-size: 14px;
-  margin: 0;
 }
 
 .subtitle {
@@ -125,12 +110,13 @@ footer p {
   overflow: auto;
 }
 
-.light-link {
-  color: #9E7FEB !important;
-}
+/* Table Styles */
 
-.light-link:hover {
-  color: #FFFFFF !important;
+td {
+  font-size: 14px !important;
+  padding-left: 20px !important;
+  vertical-align: middle !important; 
+  padding: 10px 20px; 
 }
 
 /* NOTE TO SELF: VERTICAL IMAGE SIZING */
@@ -145,14 +131,14 @@ thead th {
   padding-left: 20px !important;
 }
 
-.dropdown-menu {
+.dropdown-menu{
   background-color: var(--body) !important;
   align-items: center !important;
   overflow-x: visible !important;
-  background-color: #5d36be !important;
+  background-color:  #5d36be !important;
 }
 
-.dropdown-item {
+.dropdown-item{
   align-items: center !important;
   overflow-x: visible !important;
 }
@@ -166,11 +152,189 @@ thead th {
 /* Button Styles */
 
 .logo {
-  width: 100%;
-  cursor: pointer;
+  font-size: 20px; 
+  cursor: pointer; 
+}
+
+.logo:hover a {
+  color: var(--hover);
+}
+
+.big-button {
+  max-height: 50px;
+}
+
+button {
+  background-color: transparent;
+  border: transparent;
+}
+
+.buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around !important;
+  width: 100% !important;
+  margin-bottom: 15px;
+}
+ 
+.buttons button {
+  margin: 0 5px; 
+  align-self: center;
+} 
+
+.btn-secondary {
+  background-color: #000000 !important;
+  border-color: #F465EE !important;
+  border: none !important;
+}
+
+.btn-secondary:hover {
+  background-color: #5d36be !important;
+  border-color: #F465EE !important;
+}
+
+.dropdown-item:hover {
+  background-color: #F465EE !important;
+}
+
+.delete {
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
+/* Navigation Styles */
+
+nav ul {
+  font-size: 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
   align-items: center;
+  float: right !important;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  cursor: pointer;
+}
+
+li:hover {
+  color: var(--hover) !important; 
+  }
+
+.static{
+  cursor: default;
+}
+
+#faqs:hover {
+    color: var(--hover) !important;
+  }
+
+/* Footer Styles */
+
+footer {
+  width: 100% !important;
+  background-color: var(--footer);
+  text-align: center !important;
+  box-sizing: border-box !important;
+  z-index: 999;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  position: relative;
+  border-top: 1px solid var(--border)
+}
+
+footer p {
+  font-size: 14px;
+  padding: 10px;
+  margin: auto;
+}
+
+.center-span.buttons {
+  justify-content: center !important;
+  align-items: center !important;
+  z-index: 999; 
+  height: 60px;
+} 
+
+.center-span.buttons button {
+  margin: 5px; 
+}
+
+/* Miscellaneous */
+
+.static {
+  cursor: default;
+}
+
+.light-link {
+  color:#9E7FEB !important;
+}
+
+.light-link:hover{
+    color: #FFFFFF !important;
+}
+
+.question {
+  background-color: #000000;
+  display: block;
+  padding: 10px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 280px;
+  margin-right: 280px;
+  border: solid 5px;
+  border-color: var(--border) !important;
+  border-radius: 5px;
+}
+
+#about-section {
+  margin-bottom: 30px;
+}
+
+.about, .answer {
+  font-size: 18px !important;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+#faq-section{
+  margin-top: 20px !important;
+  margin-bottom: 60px !important;
+}
+
+a:hover,
+.delete:hover,
+#about:hover,
+#about:hover a,
+#faqs:hover,
+#faqs:hover a {
+  color: var(--hover) !important;
+  text-decoration: none !important;
+}
+
+
+.dropdown-menu {
+  max-width: 55px !important;
+  border: 10px #FFFFFF !important;
 }
 
 .normal-logo {
