@@ -15,14 +15,6 @@
   --hover: #2c0f76 !important;
 }
 
-.logo {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  font-size: 20px; 
-  cursor: pointer; 
-}
-
 main {
   margin-top: 70px;
   background-color: var(--body);
@@ -53,8 +45,6 @@ table {
   width: 100%;
   border-collapse: collapse;
   overflow-x: auto !important;
-  padding-top: 60px;
-  margin-bottom: 0px !important;
 }
 
 .medium-button {
@@ -69,7 +59,7 @@ tr {
 }
     
 p {
-  font-size: medium;
+  font-size: 14px;
   color: #F465EE !important;
 }
 
@@ -117,7 +107,6 @@ header {
 
 td {
   font-size: 16px !important;
-  padding-left: 20px !important;
   vertical-align: middle !important; 
   padding: 10px 20px; 
 }
@@ -155,6 +144,9 @@ thead th {
 /* Button Styles */
 
 .logo {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
   font-size: 20px; 
   cursor: pointer; 
 }
@@ -258,7 +250,7 @@ footer {
   left: 0;
   bottom: 0;
   position: relative;
-  border-top: 1px solid var(--border)
+  border-top: 2px solid var(--border)
 }
 
 footer p {
@@ -314,7 +306,6 @@ footer p {
   font-size: 18px !important;
 }
 
-
 li {
   list-style-type: none;
 }
@@ -334,10 +325,20 @@ a:hover,
   text-decoration: none !important;
 }
 
+
 .dropdown-menu {
   max-width: 55px !important;
   border: 10px #FFFFFF !important;
 }
+
+td:last-child,
+td:first-child,
+td:nth-child(2) {  /* Targets the second cell in each row */
+  white-space: nowrap; /* Prevents the content from wrapping to the next line */
+  width: 1%; /* Minimally sets the width allowing the content to dictate the actual width */
+  max-width: 1%; /* Ensures the maximum width is as small as possible to fit the content */
+}
+
 
 .normal-logo {
   display: block;
@@ -358,7 +359,7 @@ a:hover,
     display: block;
   }
   td:first-child img {
-    max-height: 300px;
+    max-height: 200px;
   }
 }
 
