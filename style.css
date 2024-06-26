@@ -77,6 +77,8 @@ th,
 td {
   color: #F465EE !important;  
   border-color: #9E7FEB !important;
+  border: 2px solid var(--border);
+  border-collapse: collapse;
 }
 
 h3 {
