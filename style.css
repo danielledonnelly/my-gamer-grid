@@ -356,7 +356,7 @@ a:hover,
     display: block;
   }
   td:first-child img {
-    max-height: 150px;
+    max-height: 300px;
   }
 }
 
@@ -369,6 +369,6 @@ a:hover,
     display: block;
 }
   td:first-child img {
-  max-height: 100px;
+  max-height: 200px;
 }
 }
