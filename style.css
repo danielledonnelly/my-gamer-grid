@@ -41,7 +41,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   float: left;
-  padding-top: 60px
+  padding-top: 50px;
 } 
 
 tr:hover {
@@ -86,7 +86,7 @@ h3 {
 
 header {
   background-color: var(--header) !important;
-  padding: 20px 0 !important;
+  padding: 10px 0 !important;
   justify-content: space-between !important;
   align-items: center !important;
   width: 100% !important;
@@ -95,7 +95,6 @@ header {
   top: 0;
   z-index: 999;
   border-bottom: 2px solid var(--border);
-  padding-bottom: 10px !important;
 }
 
 .subtitle {
