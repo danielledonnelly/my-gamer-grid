@@ -329,13 +329,13 @@ a:hover,
   border: 10px #FFFFFF !important;
 }
 
-td:last-child,
 td:first-child,
 td:nth-child(2),
-td:nth-child(3) {  /* Targets the second cell in each row */
-  white-space: nowrap; /* Prevents the content from wrapping to the next line */
-  width: 1%; /* Minimally sets the width allowing the content to dictate the actual width */
-  max-width: 1%; /* Ensures the maximum width is as small as possible to fit the content */
+td:nth-child(3) { 
+  white-space: nowrap; 
+  width: 1%; 
+  max-width: 1%; 
+  text-align: center;
 }
 
 
