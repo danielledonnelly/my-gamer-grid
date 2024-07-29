@@ -1,5 +1,5 @@
-Gamer Grid is the eccentric sister-project of [Media Masterlist](https://danielledonnelly.github.io/media-masterlist-project/).
-
-My goal is to use an API to pull game covers while going in a maximalist styling direcion.
-
-Feel free to check the site out [here](https://danielledonnelly.github.io/gamer-grid/). It's still a work in progress!
+# [Gamer Grid](https://danielledonnelly.github.io/gamer-grid/) 
+## Rate, rank, and review your favourite video games with this responsive table
+✦ Type a title into the game column and watch as the IGDB API auto-fills the cell with the game's cover
+  <br>✦ Can't find the cover you're looking for? Images can also be manually pasted into any cell
+  <br>✦ To see a filled-in version of the table, check out [my personal Gamer Grid]((https://danielledonnelly.github.io/gamer-grid/).
