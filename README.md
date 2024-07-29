@@ -1,2 +1,4 @@
 # [Gamer Grid: My Top 10 Games](https://danielledonnelly.github.io/my-gamer-grid/) 
-## Responsive Top 10 List in the form of a dynamic table
+## Mobile-responsive Top 10 Games List
+✦ A static list of reviews for my favourite video games created using Gamer Grid
+  <br>✦ To make your own list, check out the [Gamer Grid repository]((https://danielledonnelly.github.io/my-gamer-grid/) ).
